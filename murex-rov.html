@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUREX Robotics ROV V3.5 | Yash</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">Yash</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="media.html">Media</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <span class="pill">Project</span>
+          <h1>MUREX Underwater Robotics ROV</h1>
+          <p>
+            An open-source underwater ROV designed for the 2024 MATE ROV
+            competition. Built around a modular 6-DOF chassis, 7-DOF arm, and a
+            custom electrical stack that undercuts commercial costs.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="projects.html">Back to Projects</a>
+            <a class="button" href="media.html">Media Library</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container detail">
+          <div>
+            <div class="media-placeholder">Add hero render or pool photo</div>
+            <p class="media-caption">Photo idea: full ROV in the pool with tether.</p>
+            <div class="project-actions">
+              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">GitHub (update link)</a>
+              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">Video (update link)</a>
+              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">PDF (update link)</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Overview</h3>
+            <p class="muted">
+              I led the design of a fully open-source underwater ROV intended
+              to be small, low-cost, and modular without sacrificing
+              capability. We focused on doing it right: open tooling, validated
+              subsystems, and repeatable performance under competition
+              conditions.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>6-DOF frame with 7-DOF manipulator arm and modular mounts.</li>
+              <li>Custom PCBs for control, power, and sensor fusion.</li>
+              <li>Multi-camera vision with IP + USB streams.</li>
+              <li>Open-source stack that undercuts commercial costs by 88%.</li>
+              <li>Broke 10 industry records and placed 5th at Worlds.</li>
+            </ul>
+            <div class="tags" style="margin-top: 16px;">
+              <span class="tag">ROV</span>
+              <span class="tag">ArduPilot</span>
+              <span class="tag">Embedded Linux</span>
+              <span class="tag">CAD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <div class="card">
+            <h3>Systems approach</h3>
+            <p class="muted">
+              Mechanical, electrical, and software teams worked in parallel. I
+              standardized interfaces and enclosure dimensions so each
+              subsystem could be developed asynchronously and still assemble
+              cleanly.
+            </p>
+            <ul>
+              <li>Standardized connectors across boards and harnesses.</li>
+              <li>Mechanical frame designed for rapid swaps and upgrades.</li>
+              <li>Control stack tuned for stable 6-DoF motion.</li>
+            </ul>
+            <div class="media-placeholder small">Add systems layout</div>
+            <p class="media-caption">Photo idea: system integration diagram.</p>
+          </div>
+          <div class="card">
+            <h3>What I built</h3>
+            <ul>
+              <li>Carrier board with USB 3.0 support and 10-DoF sensing.</li>
+              <li>Power board with monitoring and protection features.</li>
+              <li>ANYESC motion system for modular thruster control.</li>
+              <li>Ethernet switch for camera and control aggregation.</li>
+              <li>Topside system wiring and tether strain relief design.</li>
+            </ul>
+            <div class="media-placeholder small">Add soldering or bring-up photo</div>
+            <p class="media-caption">Photo idea: board bring-up on the bench.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">Subsystems & Media</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <div class="media-placeholder small">Add Carrier Board render</div>
+              <p class="media-caption">Photo idea: carrier board top + bottom view.</p>
+              <h4>Carrier Board</h4>
+              <p class="muted">CM4-based control board with USB 3.0 support.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add Power Board render</div>
+              <p class="media-caption">Photo idea: power board thermal test.</p>
+              <h4>Power Board</h4>
+              <p class="muted">High-efficiency DC-DC conversion + monitoring.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add ANYESC photo</div>
+              <p class="media-caption">Photo idea: ANYESC + ESC carrier slot.</p>
+              <h4>ANYESC + ESC Carrier</h4>
+              <p class="muted">Modular motion control for thrusters.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add Ethernet switch photo</div>
+              <p class="media-caption">Photo idea: ethernet switch with magnetics.</p>
+              <h4>Ethernet Switch</h4>
+              <p class="muted">Compact 5-port 100BASE-TX network core.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add vision system photo</div>
+              <p class="media-caption">Photo idea: camera layout or POV still.</p>
+              <h4>Vision System</h4>
+              <p class="muted">Multi-camera IP + USB streams with low latency.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add manipulator photo</div>
+              <p class="media-caption">Photo idea: active arm + carrier claw.</p>
+              <h4>Manipulators</h4>
+              <p class="muted">7-DOF arm tuned for mission tasks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <div class="card">
+            <h3>MUREX mission</h3>
+            <p class="muted">
+              “Attempt the impossible.” We go beyond competition to build open
+              innovations that democratize underwater robotics technology and
+              keep everything open-source for the community.
+            </p>
+            <div class="project-actions">
+              <a class="button" href="https://murexrobotics.com/" target="_blank" rel="noreferrer">
+                Official site
+              </a>
+              <a class="button" href="https://docs.murexrobotics.com/" target="_blank" rel="noreferrer">
+                Documentation
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Competition impact</h3>
+            <p class="muted">
+              The ROV emphasized low-cost, modular engineering while still
+              delivering competition-ready performance and documentation.
+            </p>
+            <ul>
+              <li>Open-source hardware stack and documentation.</li>
+              <li>Designed for fast repairs and iterative upgrades.</li>
+              <li>Built for MATE ROV Ranger division constraints.</li>
+            </ul>
+            <div class="media-placeholder small">Add team photo</div>
+            <p class="media-caption">Photo idea: team holding the ROV.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>Let’s build something bold.</div>
+        <div class="footer-links">
+          <a href="mailto:syash@umich.edu">syash@umich.edu</a>
+          <a href="https://github.com/spicysev-gif" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/yash-shah1813" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
