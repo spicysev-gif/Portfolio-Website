@@ -1,1 +1,3 @@
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
 assets/Murex_media/MUREX[[:space:]]Video[[:space:]]V7[[:space:]](1).mov filter=lfs diff=lfs merge=lfs -text
