@@ -39,16 +39,24 @@
       </section>
 
       <section>
-        <div class="container detail">
-          <div>
-            <div class="media-placeholder">Add hero render or pool photo</div>
-            <p class="media-caption">Photo idea: full ROV in the pool with tether.</p>
-            <div class="project-actions">
-              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">GitHub (update link)</a>
-              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">Video (update link)</a>
-              <a class="button" href="https://example.com" target="_blank" rel="noreferrer">PDF (update link)</a>
-            </div>
+        <div class="container">
+          <div class="video-container">
+            <video class="project-video" autoplay muted loop playsinline controls>
+              <source src="assets/Murex_media/MUREX%20Video%20V7%20%281%29.mov" type="video/quicktime">
+              <source src="assets/Murex_media/MUREX%20Video%20V7%20%281%29.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
+          <div class="project-actions" style="margin-top: 20px; justify-content: center;">
+            <a class="button" href="https://murexrobotics.com/" target="_blank" rel="noreferrer">MUREX Website</a>
+            <a class="button" href="https://docs.murexrobotics.com/" target="_blank" rel="noreferrer">Documentation</a>
+            <a class="button" href="assets/Murex_media/Phillips%20Exeter%20Academy_MUREX%20Robotics_Technical%20Documentation_2024.pdf%20%281%29-compressed%20%282%29%20%281%29.pdf" target="_blank" rel="noreferrer">Technical Docs PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container detail">
           <div class="card">
             <h3>Overview</h3>
             <p class="muted">
@@ -117,39 +125,73 @@
               <div class="media-placeholder small">Add Carrier Board render</div>
               <p class="media-caption">Photo idea: carrier board top + bottom view.</p>
               <h4>Carrier Board</h4>
-              <p class="muted">CM4-based control board with USB 3.0 support.</p>
+              <p class="muted">Raspberry Pi CM4-based control board with USB 3.0 support, 10-DoF IMU, and integrated sensor fusion. Provides main computing platform for ArduPilot and vision processing.</p>
             </div>
             <div class="card">
               <div class="media-placeholder small">Add Power Board render</div>
               <p class="media-caption">Photo idea: power board thermal test.</p>
               <h4>Power Board</h4>
-              <p class="muted">High-efficiency DC-DC conversion + monitoring.</p>
+              <p class="muted">High-efficiency DC-DC conversion with real-time current monitoring, overcurrent protection, and voltage regulation. Supports multiple power rails for electronics and thrusters.</p>
             </div>
             <div class="card">
               <div class="media-placeholder small">Add ANYESC photo</div>
               <p class="media-caption">Photo idea: ANYESC + ESC carrier slot.</p>
               <h4>ANYESC + ESC Carrier</h4>
-              <p class="muted">Modular motion control for thrusters.</p>
+              <p class="muted">Modular electronic speed controller system for thruster control. Enables independent control of 6+ thrusters with CAN bus communication and real-time telemetry.</p>
             </div>
             <div class="card">
               <div class="media-placeholder small">Add Ethernet switch photo</div>
               <p class="media-caption">Photo idea: ethernet switch with magnetics.</p>
               <h4>Ethernet Switch</h4>
-              <p class="muted">Compact 5-port 100BASE-TX network core.</p>
+              <p class="muted">Compact 5-port 100BASE-TX managed switch with PoE support. Aggregates camera streams and control data with low-latency switching for real-time operation.</p>
             </div>
             <div class="card">
               <div class="media-placeholder small">Add vision system photo</div>
               <p class="media-caption">Photo idea: camera layout or POV still.</p>
               <h4>Vision System</h4>
-              <p class="muted">Multi-camera IP + USB streams with low latency.</p>
+              <p class="muted">Multi-camera system with IP and USB 3.0 cameras providing forward, downward, and manipulator views. Low-latency streaming with hardware encoding for real-time pilot feedback.</p>
             </div>
             <div class="card">
               <div class="media-placeholder small">Add manipulator photo</div>
               <p class="media-caption">Photo idea: active arm + carrier claw.</p>
               <h4>Manipulators</h4>
-              <p class="muted">7-DOF arm tuned for mission tasks.</p>
+              <p class="muted">7-DOF manipulator arm with precision control for mission tasks. Features modular joints, waterproof servo casings, and integrated force feedback for delicate operations.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add 8 DOF Frame photo</div>
+              <p class="media-caption">Photo idea: full frame assembly showing 8 degrees of freedom.</p>
+              <h4>8 DOF Frame</h4>
+              <p class="muted">Modular frame system providing 8 degrees of freedom for precise underwater maneuvering and positioning. Designed for optimal thruster placement and stability across all axes of motion.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add vertical profiling float photo</div>
+              <p class="media-caption">Photo idea: float mechanism or deployment system.</p>
+              <h4>Vertical Profiling Float</h4>
+              <p class="muted">Automated vertical profiling system for oceanographic data collection. Enables controlled ascent and descent for water column sampling, temperature profiling, and depth-based measurements with precise depth control.</p>
+            </div>
+            <div class="card">
+              <div class="media-placeholder small">Add waterproof servo casing photo</div>
+              <p class="media-caption">Photo idea: servo in casing or pressure test setup.</p>
+              <h4>Waterproof Servo Casing</h4>
+              <p class="muted">World's cheapest fully waterproof servo casing rated to 5 meters depth. Saves 97% cost compared to commercial cases. Oil-free design tested in all orientations for reliable operation regardless of servo mounting direction.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">Technical Documentation</h2>
+          <object
+            class="resume-embed"
+            data="assets/Murex_media/Phillips%20Exeter%20Academy_MUREX%20Robotics_Technical%20Documentation_2024.pdf%20%281%29-compressed%20%282%29%20%281%29.pdf"
+            type="application/pdf"
+          >
+            <p class="muted">
+              Your browser cannot display the PDF. 
+              <a href="assets/Murex_media/Phillips%20Exeter%20Academy_MUREX%20Robotics_Technical%20Documentation_2024.pdf%20%281%29-compressed%20%282%29%20%281%29.pdf" target="_blank" rel="noreferrer">Download it here</a>.
+            </p>
+          </object>
         </div>
       </section>
 
@@ -158,7 +200,7 @@
           <div class="card">
             <h3>MUREX mission</h3>
             <p class="muted">
-              “Attempt the impossible.” We go beyond competition to build open
+              "Attempt the impossible." We go beyond competition to build open
               innovations that democratize underwater robotics technology and
               keep everything open-source for the community.
             </p>
